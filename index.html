@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allan Jacquet-Cretides</title>
+  <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    @media(max-width: 500px) {
+      .reverse-columns {
+        flex-direction: column-reverse;
+        display: flex;
+      }
+    }
+
+    .titled {
+      font-family: 'Merriweather', serif !important;
+      font-size: 58px !important;
+      font-weight: 400 !important;
+      line-height: 64px !important;
+    }
+
+    .subtitled {
+      font-family: 'Merriweather', serif !important;
+      font-size: 22px !important;
+      font-weight: 400 !important;
+      line-height: 36px !important;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero is-white is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns  is-vcentered reverse-columns">
+          <div class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-5-desktop is-offset-1-desktop
+          is-5-widescreen is-offset-1-widescreen
+          is-5-fullhd is-offset-1-fullhd" data-aos="fade-down">
+            <h1 class="title titled is-1 mb-6">
+              Hello
+            </h1>
+            <h2 class=" subtitled subtitle  is-4 has-text-weight-normal is-family-sans-serif">
+					I'm Allan Jacquet-Cretides.<br/>
+					A remote Software Engineer.
+			</h2>
+            <div class="buttons">
+		      <a class="button is-rounded fa fa-twitter" style="display:flex" href="https://twitter.com/_Jumanjii_" aria-hidden="false"></a>
+			  <a class="button is-rounded fa fa-linkedin" style="display:flex" href= "https://www.linkedin.com/in/allan-jacquet-cretides/" aria-hidden="true"></a>
+			  <a class="button is-rounded fa fa-github" style="display:flex" href="https://github.com/Jumanjii" aria-hidden="true"></a>
+            </div>
+          </div>
+          <div data-aos="fade-right" class="column
+          is-10-mobile is-offset-1-mobile
+          is-10-tablet is-offset-1-tablet
+          is-4-desktop is-offset-1-desktop
+          is-4-widescreen is-offset-1-widescreen
+          is-4-fullhd is-offset-1-fullhd">
+            <figure class="image is-square">
+              <img src="./allan.svg">
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-medium has-text-centered">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div data-aos="zoom-in-up" class="column is-8">
+            <h1 class="title titled is-1 mb-6">
+              That's all. Maybe later you will find here my <span id="typewriter"></span>
+            </h1>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
+  <script>
+    new Typewriter('#typewriter', {
+      strings: ['articles.', 'star projects.', 'digital garden.' ],
+      autoStart: true,
+      loop: true,
+    });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+</body>
+
+</html>
